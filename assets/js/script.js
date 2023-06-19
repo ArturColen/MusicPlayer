@@ -14,7 +14,6 @@ const btnVolume = document.querySelector('#btn-volume');
 const btnVolumeIcon = document.querySelector('#btn-volume i');
 const playerVolume = document.querySelector('#player-volume');
 
-// Initial data
 let currentSong = 0;
 let repeatSong = false;
 
@@ -60,7 +59,6 @@ playerProgress.addEventListener('input', () => changeTime());
 audioPlayer.addEventListener('timeupdate', () => timeUpdate());
 audioPlayer.addEventListener('ended', () => ended());
 
-// Play and pause music
 const togglePlaySong = () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
@@ -72,7 +70,6 @@ const togglePlaySong = () => {
     }
 };
 
-// Change song from the list
 const changeSong = (next = true) => {
     if (next && currentSong < songs.length - 1) {
         currentSong++;
@@ -88,7 +85,6 @@ const changeSong = (next = true) => {
     togglePlaySong();
 };
 
-// Update data of the currently playing song
 const updatePlayer = () => {
     const song = songs[currentSong];
 
@@ -98,13 +94,11 @@ const updatePlayer = () => {
     playerProgress.value = audioPlayer.currentTime;
 };
 
-// Repeat music
 const toggleRepeatSong = () => {
     repeatSong = !repeatSong;
     btnRepeat.classList.toggle('btn-activated');
 };
 
-// Show the current time of the song and its total length
 const timeUpdate = () => {
     const { currentTime, duration } = audioPlayer;
 
@@ -116,7 +110,6 @@ const timeUpdate = () => {
     playerProgress.value = currentTime;
 };
 
-// Change the music volume
 const changeVolume = () => {
     const { value } = playerVolume;
 
@@ -138,12 +131,10 @@ const formatSecondsToMinutes = (seconds) => {
     return new Date(seconds * 1000).toISOString().slice(14, 19);
 };
 
-// Change to the next song
 const ended = () => {
     repeatSong ? togglePlaySong() : changeSong(true);
 };
 
-// Update the music data
 window.onload = () => {
     updatePlayer();
 };
