@@ -19,34 +19,59 @@ let repeatSong = false;
 
 const songs = [
     {
-        name: 'No Longer Bound',
-        author: 'Forrest Frank, Hulvey',
-        path: './assets/songs/no-longer-bound.mp3',
+        name: 'Oh Meu Deus',
+        author: 'Projota',
+        path: './assets/songs/oh-meu-deus.mp3',
     },
     {
-        name: 'Open up My Heart',
-        author: 'Isla Vista Worship',
-        path: './assets/songs/open-up-my-heart.mp3',
+        name: 'Essa Eu Fiz Pro Nosso Amor',
+        author: 'Jão',
+        path: './assets/songs/essa-eu-fiz-pro-nosso-amor.mp3',
     },
     {
-        name: 'Best Friends',
-        author: 'Hillsong Young & Free',
-        path: './assets/songs/best-friends.mp3',
+        name: 'The Greatest',
+        author: 'Sia',
+        path: './assets/songs/the-greatest.mp3',
     },
     {
-        name: 'Coming In Hot',
-        author: 'Lecrae, Andy Mineo',
-        path: './assets/songs/coming-in-hot.mp3',
+        name: 'People You Know',
+        author: 'Selena Gomez',
+        path: './assets/songs/people-you-know.mp3',
     },
     {
-        name: '814',
-        author: 'Isla Vista Worship',
-        path: './assets/songs/814.mp3',
+        name: 'Clocks',
+        author: 'Coldplay',
+        path: './assets/songs/clocks.mp3',
     },
     {
-        name: 'Phenomena',
-        author: 'Hillsong Young & Free',
-        path: './assets/songs/phenomena.mp3',
+        name: 'Nosso Quadro',
+        author: 'Ana Castela',
+        path: './assets/songs/nosso-quadro.mp3',
+    },
+    {
+        name: 'Ela Só Quer Paz',
+        author: 'Projota',
+        path: './assets/songs/ela-so-quer-paz.mp3',
+    },
+    {
+        name: 'Si No Estás (Speed Up)',
+        author: 'Iñigo Quintero',
+        path: './assets/songs/si-no-estas.mp3',
+    },
+    {
+        name: 'A Sky Full Of Stars',
+        author: 'Coldplay',
+        path: './assets/songs/a-sky-full-of-stars.mp3',
+    },
+    {
+        name: 'Mirrors',
+        author: 'Justin Timberlake',
+        path: './assets/songs/mirrors.mp3',
+    },
+    {
+        name: 'Titanium',
+        author: 'David Guetta ft. Sia',
+        path: './assets/songs/titanium.mp3',
     },
 ];
 
